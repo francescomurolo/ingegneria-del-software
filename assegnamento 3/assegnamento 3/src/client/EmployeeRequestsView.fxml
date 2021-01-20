@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.EmployeeRequestsViewController">
+   <children>
+      <VBox alignment="TOP_CENTER">
+         <children>
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Requests">
+                    <font>
+                        <Font size="38.0" />
+                    </font>
+            </Text>
+                <HBox alignment="CENTER">
+                    <children>
+                  <AnchorPane prefWidth="250.0">
+                     <children>
+                              <Button fx:id="backButton" mnemonicParsing="false" text="Back" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefWidth="300.0">
+                     <children>
+                        <CheckBox fx:id="requestCheckBox" mnemonicParsing="false" text="View all" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="120.0" AnchorPane.topAnchor="0.0" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefWidth="250.0">
+                     <children>
+                        <Button fx:id="processButton" disable="true" mnemonicParsing="false" style="-fx-background-color: lightgreen;" text="process" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                     </children>
+                  </AnchorPane>
+                    </children>
+                </HBox>
+                <TableView fx:id="requestTable" prefHeight="500.0" prefWidth="800.0">
+                    <columns>
+                        <TableColumn fx:id="wineColumn" maxWidth="240.0" minWidth="240.0" prefWidth="240.0" resizable="false" text="Wine" />
+                  <TableColumn fx:id="quantityPresentColumn" maxWidth="120.0" minWidth="120.0" prefWidth="120.0" text="Quantity present" />
+                        <TableColumn fx:id="userColumn" maxWidth="220.0" minWidth="220.0" prefWidth="220.0" resizable="false" text="client" />
+                        <TableColumn fx:id="quantityRequiredColumn" maxWidth="130.0" minWidth="130.0" prefWidth="130.0" resizable="false" text="Quantity required" />
+                        <TableColumn fx:id="statusColumn" maxWidth="90.0" minWidth="90.0" prefWidth="90.0" resizable="false" text="Status" />
+                    </columns>
+                    <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                    </VBox.margin>
+                </TableView>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

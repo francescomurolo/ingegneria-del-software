@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.EmployeeWinesViewController">
+   <children>
+      <VBox>
+         <children>
+              <VBox alignment="TOP_CENTER">
+                  <children>
+                      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Wines">
+                          <font>
+                              <Font size="38.0" />
+                          </font>
+                  </Text>
+                      <HBox alignment="CENTER_LEFT">
+                          <children>
+                        <AnchorPane prefWidth="250.0">
+                           <children>
+                                    <Button fx:id="backButton" mnemonicParsing="false" text="Back" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="0.0" />
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane prefWidth="300.0">
+                           <children>
+                              <Button fx:id="newWineButton" mnemonicParsing="false" style="-fx-background-color: cyan;" text="New wine" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                              <Button fx:id="updateButton" disable="true" mnemonicParsing="false" style="-fx-background-color: lightgreen;" text="Update quantity" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane prefWidth="250.0">
+                           <children>
+                              <CheckBox fx:id="filterCheckBox" mnemonicParsing="false" text="Show only finished wines" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="0.0" />
+                           </children>
+                        </AnchorPane>
+                          </children>
+                      </HBox>
+                  </children>
+            </VBox>
+                <TableView fx:id="wineTable" prefHeight="500.0">
+                    <columns>
+                        <TableColumn fx:id="nameColumn" maxWidth="100.0" minWidth="100.0" prefWidth="100.0" resizable="false" text="Name" />
+                        <TableColumn fx:id="producerColumn" maxWidth="190.0" minWidth="190.0" prefWidth="190.0" resizable="false" text="Producer" />
+                        <TableColumn fx:id="yearColumn" maxWidth="50.0" minWidth="50.0" prefWidth="50.0" resizable="false" text="Year" />
+                        <TableColumn fx:id="notesColumn" maxWidth="260.0" minWidth="260.0" prefWidth="260.0" resizable="false" text="Notes" />
+                        <TableColumn fx:id="vinesColumn" minWidth="110.0" prefWidth="110.0" resizable="false" text="Vines" />
+                        <TableColumn fx:id="quantityColumn" maxWidth="70.0" minWidth="70.0" prefWidth="70.0" resizable="false" text="Quantity" />
+                    </columns>
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </VBox.margin>
+                </TableView>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

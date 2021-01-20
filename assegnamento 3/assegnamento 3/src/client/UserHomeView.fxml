@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.UserHomeViewController">
+   <children>
+      <VBox AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="100.0">
+               <children>
+                  <VBox alignment="BOTTOM_LEFT" prefWidth="400.0">
+                     <children>
+                        <Text fx:id="userWelcomeText" strokeType="OUTSIDE" strokeWidth="0.0">
+                           <font>
+                              <Font size="38.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="90.0" />
+                           </VBox.margin>
+                        </Text>
+                     </children>
+                  </VBox>
+                  <VBox alignment="BOTTOM_RIGHT" prefWidth="400.0">
+                     <children>
+                        <Button fx:id="logoutButton" mnemonicParsing="false" text="Logout">
+                           <font>
+                              <Font size="22.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets right="90.0" />
+                           </VBox.margin>
+                        </Button>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="500.0">
+               <children>
+                  <VBox alignment="CENTER" prefWidth="300.0">
+                     <children>
+                        <AnchorPane fx:id="winesPane" prefHeight="200.0" style="-fx-background-color: darkred;">
+                           <children>
+                              <Text fill="WHITE" layoutX="36.0" layoutY="110.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Buy or request wine">
+                                 <font>
+                                    <Font size="26.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </AnchorPane>
+                     </children>
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin>
+                  </VBox>
+                  <VBox alignment="CENTER" prefWidth="300.0">
+                     <children>
+                        <AnchorPane fx:id="notificationsPane" prefHeight="200.0" style="-fx-background-color: orange;">
+                           <children>
+                              <Text fx:id="notificationText" fill="RED" layoutX="59.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0">
+                                 <font>
+                                    <Font size="22.0" />
+                                 </font>
+                              </Text>
+                              <Text fill="WHITE" layoutX="91.0" layoutY="109.0" strokeType="OUTSIDE" strokeWidth="0.0" text="My requests">
+                                 <font>
+                                    <Font size="22.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                           <VBox.margin>
+                              <Insets bottom="20.0" />
+                           </VBox.margin>
+                        </AnchorPane>
+                        <AnchorPane fx:id="ordersPane" prefHeight="200.0" style="-fx-background-color: darkblue;">
+                           <children>
+                              <Text fill="WHITE" layoutX="101.0" layoutY="109.0" strokeType="OUTSIDE" strokeWidth="0.0" text="My orders">
+                                 <font>
+                                    <Font size="22.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </AnchorPane>
+                     </children>
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

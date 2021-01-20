@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.AdminOrdersViewController">
+   <children>
+      <VBox alignment="TOP_CENTER">
+         <children>
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Orders">
+                    <font>
+                        <Font size="38.0" />
+                    </font>
+            </Text>
+            <AnchorPane>
+               <children>
+                        <Button fx:id="backButton" mnemonicParsing="false" text="Back" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+                <TableView fx:id="orderTable" prefHeight="500.0" prefWidth="800.0">
+                    <columns>
+                        <TableColumn fx:id="wineColumn" maxWidth="310.0" minWidth="310.0" prefWidth="310.0" resizable="false" text="Wine" />
+                        <TableColumn fx:id="userColumn" maxWidth="310.0" minWidth="310.0" prefWidth="310.0" resizable="false" text="client" />
+                        <TableColumn fx:id="quantityColumn" maxWidth="90.0" minWidth="90.0" prefWidth="90.0" resizable="false" text="Quantity" />
+                        <TableColumn fx:id="statusColumn" maxWidth="90.0" minWidth="90.0" prefWidth="90.0" resizable="false" text="Status" />
+                    </columns>
+                    <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                    </VBox.margin>
+                </TableView>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

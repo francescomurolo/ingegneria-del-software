@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.UserWinesViewController">
+   <children>
+      <VBox alignment="TOP_CENTER" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Wines">
+               <font>
+                  <Font size="38.0" />
+               </font>
+            </Text>
+            <HBox alignment="CENTER">
+               <children>
+                  <AnchorPane prefWidth="140.0">
+                     <children>
+                        <Button fx:id="backButton" mnemonicParsing="false" text="Back" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefWidth="500.0">
+                     <children>
+                        <HBox alignment="CENTER" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <TextField fx:id="nameSearchField" prefWidth="300.0" promptText="Name">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets right="10.0" />
+                                 </HBox.margin>
+                              </TextField>
+                              <ChoiceBox fx:id="yearSearchChoice" prefWidth="100.0">
+                                 <HBox.margin>
+                                    <Insets right="10.0" />
+                                 </HBox.margin>
+                              </ChoiceBox>
+                              <Button fx:id="resetButton" mnemonicParsing="false" text="Reset">
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </Button>
+                           </children>
+                        </HBox>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefWidth="160.0">
+                     <children>
+                        <HBox alignment="CENTER" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="40.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <Button fx:id="buyButton" disable="true" mnemonicParsing="false" style="-fx-background-color: lightgreen;" text="Buy">
+                                 <HBox.margin>
+                                    <Insets right="10.0" />
+                                 </HBox.margin>
+                              </Button>
+                              <Button fx:id="requestButton" disable="true" mnemonicParsing="false" style="-fx-background-color: orange;" text="Request" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </AnchorPane>
+               </children>
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" />
+               </VBox.margin>
+            </HBox>
+            <TableView fx:id="wineTable" prefHeight="500.0" prefWidth="800.0">
+              <columns>
+                <TableColumn fx:id="nameColumn" maxWidth="110.0" minWidth="110.0" prefWidth="110.0" resizable="false" text="Name" />
+                <TableColumn fx:id="producerColumn" maxWidth="170.0" minWidth="170.0" prefWidth="170.0" resizable="false" text="Producer" />
+                  <TableColumn fx:id="yearColumn" maxWidth="70.0" minWidth="70.0" prefWidth="70.0" resizable="false" text="Year" />
+                  <TableColumn fx:id="notesColumn" maxWidth="260.0" minWidth="260.0" prefWidth="260.0" resizable="false" text="Notes" />
+                  <TableColumn fx:id="vinesColumn" minWidth="110.0" prefWidth="110.0" resizable="false" text="Vines" />
+                  <TableColumn fx:id="quantityColumn" maxWidth="60.0" minWidth="60.0" prefWidth="60.0" resizable="false" text="Quantity" />
+              </columns>
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </VBox.margin>
+            </TableView>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
