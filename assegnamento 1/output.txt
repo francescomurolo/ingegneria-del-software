@@ -1,0 +1,21 @@
+Administrator: Luca Mariano
+Partner: Danilo Paglialunga
+Partner: Francesco Murolo
+Partner: Mario Rossi
+Course: Tennis
+Competition: Soccer
+Luca has added Luigi
+Luca has removed Mario
+Luca has updated the surname of Luigi Verdi
+Danilo has subscribed to Tennis
+Danilo has subscribed to Soccer
+Danilo has unsubscribed from Tennis
+Administrator: Luca Mariano
+Partner: Danilo Paglialunga
+Partner: Francesco Murolo
+Partner: Luigi Verdi
+Course: Tennis
+Competition: Soccer
+Subscribed to Tennis: 0
+Subscribed to Soccer: 1
+Danilo Paglialunga
